@@ -63,7 +63,6 @@ has_criminal_record = True
 
 if has_good_credit and not has_criminal_record:
     print("Eligible for loan")
-"""
 
 #Comparison Operators
 # == equal to, > greater than, < less than, >= greater than or equals to, <= less than or equal to and != not equal
@@ -73,3 +72,27 @@ if temperature >= 30:
     print("it's a hot day")
 else:
     print("It's not a hot day")
+
+# While Loops
+i = 1
+while i <= 5:
+    print("*" * i)
+    i = i + 1
+print("Done")
+
+# Building a guessing game
+secret_number = 9
+guess_count = 0
+guess_limit = 3
+while guess_count < guess_limit:
+    guess = int(input('Guess: '))
+    guess_count +=1
+    if guess == secret_number:
+        print(" You won!")
+        break
+else:
+    print("Sorry you failed")
+
+"""
+
+
